@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #757575;
+  --secondary: #494949;
+  --tertiary: #292929;
+  --test: #1cc1f3;
+  --test2: #09ff5b;
+  --white: #ffffff;
+  --black: #000000;
+  --fourth: oklch(0.321785 0.02476 255.701624 / 1);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.center {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.title {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.mainButtons {
+  display: flex;
+  font-size: 3rem;
+  margin: auto;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.btn-hover:hover {
+  background-color: var(--primary)
+}
+
+.custom-card-image .card.image-full:before {
+  border-radius: 0.5rem;
+  opacity: 0.45;
+}
+
+/* Project Section */
+.card {
+  border-radius: 0.5rem;
+  border-color: var(--black);
+  border-width: 3px;
+  width: auto;
+  background-color: var(--tertiary);
+  /* opacity: .85; */
+}
+
+/* .projectHeader {
+  color: var(--primary);
+  font-size: 10rem;
+  margin: auto;
+} */
+
+/* Project Card */
+.projectCard {
+  width: 30%;
+  height: 30%;
+}
+
+.projectCard .projectImg {
+  max-width: 100%;
+  max-height: 10rem;
+}
+
+.projectCard .projectName {
+  color: var(--primary);
+  font-size: 3rem;
+  margin: auto;
+}
+
+.projectCard .projectDesc {
+  color: var(--white);
+  font-size: 1.25rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
